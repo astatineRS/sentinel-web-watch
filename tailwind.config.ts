@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom cybersecurity theme colors
+				cyber: {
+					blue: '#0a84ff',
+					lightBlue: '#66b3ff',
+					dark: '#121218',
+					darker: '#0c0c10',
+					accent: '#00e5ff',
+					red: '#ff453a',
+					orange: '#ff9f0a',
+					yellow: '#ffd60a',
+					green: '#30d158'
 				}
 			},
 			borderRadius: {
@@ -84,11 +97,27 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-glow': {
+					'0%, 100%': { 
+						opacity: '1',
+						boxShadow: '0 0 5px rgba(10, 132, 255, 0.8), 0 0 10px rgba(10, 132, 255, 0.5)' 
+					},
+					'50%': { 
+						opacity: '0.7',
+						boxShadow: '0 0 20px rgba(10, 132, 255, 0.8), 0 0 30px rgba(10, 132, 255, 0.5)' 
+					}
+				},
+				scanning: {
+					'0%': { transform: 'translateY(0)' },
+					'100%': { transform: 'translateY(100%)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-glow': 'pulse-glow 2s infinite',
+				'scanning': 'scanning 1.5s linear infinite'
 			}
 		}
 	},
