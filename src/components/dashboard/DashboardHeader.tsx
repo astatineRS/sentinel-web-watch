@@ -12,7 +12,7 @@ const DashboardHeader = () => {
           <div className="flex bg-cyber-blue/20 p-2 rounded-lg animate-pulse-glow">
             <ShieldAlert className="h-8 w-8 text-cyber-blue" />
           </div>
-          <h1 className="text-3xl font-bold tracking-tight">Sentinel Web Watch</h1>
+          <h1 className="text-3xl font-bold tracking-tight">Astatine Web Watch</h1>
           <Badge variant="outline" className="ml-2">v1.0.0</Badge>
         </div>
         <p className="text-muted-foreground mt-1">
